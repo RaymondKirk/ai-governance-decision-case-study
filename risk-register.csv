@@ -1,0 +1,7 @@
+Risk ID,Risk scenario,Impact,Likelihood,Priority,Control or response,Owner,Evidence needed,Status
+AI-01,Assistant reveals a restricted policy to an unauthorized user,High,Medium,High,Enforce source permissions at retrieval and test denied access,Security lead,Permission design and negative access test results,Proposed
+AI-02,Answer cites a superseded policy and causes a wrong operational decision,High,Medium,High,Use versioned approved corpus and evaluate answers against current sources,Operations lead,Corpus inventory and answer review results,Proposed
+AI-03,Assistant invents an answer when documents are silent,Medium,High,High,Require abstention and escalation for insufficient evidence,Product owner,Unanswerable question test results,Proposed
+AI-04,Vendor retains sensitive prompts beyond approved terms,High,Medium,High,Complete vendor and data-flow review before pilot,Privacy lead,Contract terms and approved data-flow record,Proposed
+AI-05,Users over-rely on assistant output,Medium,Medium,Medium,Show sources and human decision notice; train pilot users,Product owner,Training record and user feedback,Proposed
+AI-06,Model or document changes invalidate earlier testing,Medium,Medium,Medium,Track versions and require change-triggered review,Product owner,Change log and review decision,Proposed
